@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page A</title>
+</head>
+
+<body>
+
+    <h1>Page A-fatme yassin - 214021537</h1>
+
+    <input
+        type="text"
+        id="txtA"
+        placeholder="Enter text for Page B">
+
+    <button onclick="navigateToPageB()">
+        Navigate to Page B
+    </button>
+
+</body>
+
+<script>
+
+    function navigateToPageB() {
+
+        // Get the text from the textbox
+        let inputValue = document.getElementById("txtA").value;
+
+        // Navigate to Page B and send the value
+        window.location.href =
+            "pageB.html?data=" + encodeURIComponent(inputValue);
+    }
+
+</script>
+
+</html>

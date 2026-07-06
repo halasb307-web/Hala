@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page B</title>
+</head>
+
+<body>
+
+    <h1>Page B-fatme yassin- 214021537</h1>
+
+    <h3 id="lblB"></h3>
+
+</body>
+
+<script>
+    // Get the query string
+    const queryString = window.location.search;
+
+    // Parse the parameters
+    const urlParams = new URLSearchParams(queryString);
+
+    // Get the value of "data"
+    const value = urlParams.get("data");
+
+    // Display it
+    document.getElementById("lblB").innerText = value;
+</script>
+
+</html>
